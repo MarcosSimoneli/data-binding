@@ -1,6 +1,6 @@
 <section class="property-binding">
 
-    <article>
+    <!-- <article>
         <h3>Interpolation / Interpolação</h3>
         <p>String renderizada com interpolação : {{ url }}</p>
         <p>Resultado de 1 + 1 é: {{ 1 + 1}}</p>
@@ -13,6 +13,42 @@
         <img src="{{ urlImagem }}">
         <img [src]="urlImagem">
 
+    </article> -->
+
+    <article>
+        <h3>Class e Style Binding</h3>
+        <div>
+            Selecione uma classe:
+            <select #classe (change)="0">
+                <option value="alert-success">Sucesso</option>
+                <option value="alert-success">Info</option>
+                <option value="alert-success">Alerta</option>
+                <option value="alert-success">Erro</option>
+            </select>
+            <br><br>
+
+              <div class="alert alert-success" role="alert"> This is a success alert—check it out! </div>
+              <div class="alert alert-info" role="alert"> This is a info alert—check it out! </div>
+              <div class="alert alert-warning" role="alert"> This is a warning alert—check it out! </div>
+              <div class="alert alert-danger" role="alert"> This is a danger alert—check it out! </div>
+              <div class="alert alert-light" role="alert"> This is a light alert—check it out! </div>
+              <div class="alert alert-dark" role="alert"> This is a dark alert—check it out! </div>
+
+        </div>
+
+
+        <div>
+            <button type="button" class="btn btn-primary" dropdownToggle>
+              Botão de Dropdown
+            </button>
+            <ul *dropdownMenu class="dropdown-menu" role="menu">
+              <li><a class="dropdown-item" href="#">Item 1</a></li>
+              <li><a class="dropdown-item" href="#">Item 2</a></li>
+              <li class="divider"></li>
+              <li><a class="dropdown-item" href="#">Item 3</a></li>
+            </ul>
+          </div>
+          
     </article>
 
 </section>
