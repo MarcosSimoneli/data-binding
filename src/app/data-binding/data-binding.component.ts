@@ -23,6 +23,8 @@ export class DataBindingComponent {
       idade: 20
     }
 
+    nomeDoCurso : string = 'Angular';
+
     atualizarNome(event: any): void {
       this.nome = event.target.value;
     }
