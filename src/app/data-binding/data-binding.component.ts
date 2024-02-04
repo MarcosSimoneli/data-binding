@@ -25,6 +25,8 @@ export class DataBindingComponent {
 
     nomeDoCurso : string = 'Angular';
 
+    valorInicial : number = 15;
+
     atualizarNome(event: any): void {
       this.nome = event.target.value;
     }
@@ -39,6 +41,10 @@ export class DataBindingComponent {
 
     getCurtirCurso(){
       return true;
+    }
+
+    onMudouValor(evento : any): void {
+      console.log(evento.novoValor);
     }
 
 }
