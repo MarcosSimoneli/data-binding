@@ -11,6 +11,26 @@ export class DataBindingComponent {
     cursoAngular: boolean = true;
     urlImagem : string = 'http://lorempixel.com.br/500/400/?2'
 
+    valorAtual: string= '';
+    valorSalvo = '';
+
+    isMouseOver: boolean = false;
+
+    nome : string = 'abc';
+
+    pessoa : any = {
+      nome: 'def',
+      idade: 20
+    }
+
+    atualizarNome(event: any): void {
+      this.nome = event.target.value;
+    }
+
+    atualizarNomeNgModel(event: any): void {
+      this.nome = event;
+    }
+
     getValor(){
       return 1
     }
